@@ -118,7 +118,7 @@ class _MyAppBarState extends State<MyAppBar> {
         Padding(
           padding: const EdgeInsets.all(10.0),
           child: IconButton(
-              icon: Icon(Icons.exit_to_app),
+              icon: Icon(Icons.power_settings_new),
               color: Colors.white,
               onPressed: () {
                 auth.error = '';

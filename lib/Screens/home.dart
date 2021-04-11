@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:order/Screens/top_pick_store.dart';
 
 import 'package:order/widgets/AppBar.dart';
 import 'package:order/widgets/ImageSlide.dart';
@@ -19,7 +20,7 @@ class _HomeState extends State<Home> {
       ),
       body: Center(
         child: Column(
-          children: [ImageSlider()],
+          children: [ImageSlider(), TopPickStore()],
         ),
       ),
     );

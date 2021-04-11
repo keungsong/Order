@@ -21,7 +21,7 @@ class _SplashScreenState extends State<SplashScreen> {
     Timer(Duration(seconds: 3), () {
       FirebaseAuth.instance.authStateChanges().listen((User user) {
         if (user == null) {
-          Navigator.pushReplacementNamed(context, WelcomScreen.id);
+          Navigator.pushReplacementNamed(context, Home.id);
         } else {
           Navigator.pushReplacementNamed(context, Home.id);
         }
