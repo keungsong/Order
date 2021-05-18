@@ -7,10 +7,11 @@ class UserModel {
   String _number;
   String _id;
 
+  // getter
   String get number => _number;
   String get id => _id;
 
-  UserModel.fromSnapshot(DocumentSnapshot snapshot) {
+  UserModel.formSnapshot(DocumentSnapshot snapshot) {
     _number = snapshot.data()[NUMBER];
     _id = snapshot.data()[ID];
   }
